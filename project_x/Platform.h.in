@@ -1,0 +1,23 @@
+#ifndef PROJECT_X_PLATFORM_H
+#define PROJECT_X_PLATFORM_H
+
+#cmakedefine HAVE_FORK
+#cmakedefine HAVE_CLOCK_GETTIME
+#cmakedefine HAVE_CLOCK_NANOSLEEP
+#cmakedefine HAVE_GETHRTIME
+
+#cmakedefine HAVE_SYS_TYPES_H
+#cmakedefine HAVE_STDINT_H
+#cmakedefine HAVE_STDDEF_H
+
+#cmakedefine HAVE_BIG_ENDIAN
+
+#if defined __linux__
+  #define HAVE_HAVE_LINUX
+#endif
+
+#cmakedefine HAVE_WINDOWS_H
+#cmakedefine HAVE_MSVC
+
+#endif // PROJECT_X_PLATFORM_H
+
